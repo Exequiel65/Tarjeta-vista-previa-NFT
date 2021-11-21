@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --soft-blue : hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0,0%,100%);
+    --font-size: 18px;
+    --font-family: 'Outfit', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+body{
+    background-color: var(--very-dark-blue-main);
+}
+
+main{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-container{
+    margin-top: 30px;
+    background-color: var(--very-dark-blue-card);
+    width: 90%;
+    padding: 25px;
+    border-radius: 20px;
+    
+}
+
+.image-container{
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+
+.eth{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+.views{
+    position: absolute;
+    width: 50px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    display: none;
+}
+
+.image-container:hover .views{
+    display: block;
+}
+
+.image-container:hover .eth-photo{
+    background-color:var(--cyan);
+    border-radius: 20px;
+}
+
+.image-container:hover .eth{
+    opacity: 0.5;
+}
+
+
+
+
+.description h2{
+    padding: 15px 0;
+    color: var(--white);
+    cursor: pointer;
+
+}
+
+.description h2:hover{
+    color: var(--cyan);
+}
+.description p, .values-date p, .avatar span{
+    line-height: 30px;
+    color: var(--soft-blue);
+    font-weight: 100;
+    font-size: var(--font-size);
+}
+
+.values-date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.values-date p{
+    display: inline-block;
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.values-date p:nth-child(2){
+    color: var(--soft-blue);
+    
+}
+
+hr{
+    border-radius: 3px;
+    background-color: var(--very-dark-blue-line);
+    border: none;
+    height: 1px;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: flex-start;
+    
+}
+
+.avatar p{
+    padding-left: 20px;
+    color: var(--white);
+    font-weight: 400;
+    cursor: pointer;
+}  
+
+.avatar p:hover{
+    color: var(--cyan);
+}
+
+.avatar img{
+    width: 40px;
+    border: 1px solid var(--white);
+    border-radius: 50%;    
+}
+
+
+
+@media (min-width : 375px){
+    .card-container{
+            max-width: 450px;
+        }
+    }
+
+
+
+@media (min-width : 1440px){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
